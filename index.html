@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+     .body, html {
+            top: 0px;
+            margin: 0;
+        }
+        .header {
+            position: relative;
+            height: 40vh; /* Fejléc magassága */
+            overflow: hidden;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('./Kepek/aiheader.png') no-repeat center center/cover;
+            filter: blur(5px);
+            z-index: 1;
+        }
+        .header-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 2;
+        }
+        .header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .content-section {
+            height: 60vh; /* A törzs magassága */
+            display: flex;
+        }
+        .card-advantages {
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .card-disadvantages {
+            background-color: white;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        nav{
+            min-width: 100%;
+            color: black;
+            background-color: transparent;
+        }
+        .also{
+            width: 100%;
+            margin-top: 10px;
+            min-height: 20px;
+            background-color: rgba(25, 25, 25, 0.7);
+            filter: blur(0.5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar nav">
+            <div class="navbar-item"><a href="#"><h1>Home</h1></a></div>
+        </nav>
+        <header class="header">
+            <div class="header-content">
+                <h1>Mesterséges Intelligencia</h1>
+            </div>
+        </header>
+        <div class="content-section row m-0">
+            <div class="col-sm-6 p-0">
+                <div class="card card-advantages h-100">
+                    <div class="card-header bg-dark text-white">
+                        <h2>Előnyök</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Automatizáció: Az ismétlődő feladatok automatizálása, amely növeli a hatékonyságot és csökkenti a hibák számát.</li>
+                            <li>Adatfeldolgozás: Nagy mennyiségű adat gyors és pontos feldolgozása.</li>
+                            <li>24/7 Üzemelés: Folyamatos működés, szünet nélkül.</li>
+                            <li>Testreszabott megoldások: Személyre szabott ajánlások és megoldások nyújtása a felhasználóknak.</li>
+                            <li>Kutatás és fejlesztés: Új technológiák és módszerek felfedezése a különböző tudományágakban.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 p-0">
+                <div class="card card-disadvantages h-100">
+                    <div class="card-header bg-light text-dark">
+                        <h2>Hátrányok</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Munkahelyek elvesztése: Az automatizáció és az MI alkalmazása egyes munkahelyek megszűnéséhez vezethet.</li>
+                            <li>Etikai kérdések: Az MI használata új etikai és jogi problémákat vet fel, például az adatvédelem és a döntéshozatal terén.</li>
+                            <li>Költséges fejlesztés: Az MI rendszerek kifejlesztése és karbantartása jelentős anyagi ráfordítást igényel.</li>
+                            <li>Függőség: Az emberek túlzottan függővé válhatnak az MI rendszerektől, csökkentve saját problémamegoldó képességüket.</li>
+                            <li>Biztonsági kockázatok: Az MI rendszerek sebezhetők lehetnek a kibertámadásokkal szemben, ami komoly biztonsági kockázatokat jelenthet.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="also">
+            <p>Készítette: <b>Palóczi Barnabás</b></p>
+            <p>Dátum: <b>25/05/2024 23:02</b></p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
